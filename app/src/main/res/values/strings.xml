@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LearningVolley</string>
+    <string name="first_name_lable">First Name:</string>
+    <string name="last_name_lable">Last Name:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="email_label">Email:</string>
+    <string name="empty">Empty</string>
+</resources>

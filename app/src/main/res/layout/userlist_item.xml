@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="user"
+            type="com.bupt.paragon.model.User"/>
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.bupt.paragon.views.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@android:color/holo_orange_light"
+        android:layout_marginRight="10dp"
+        android:src="@{user.getIcon}"
+        />
+    
+    <TextView
+        android:layout_gravity="center_vertical"
+        style="@style/TextViewTheme"
+        android:text="@{user.userName}"
+     />
+
+</LinearLayout>
+</layout>
